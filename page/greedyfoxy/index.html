@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Greedy Foxy - Platform Game</title>
+    <meta name="description" content="Greedy Foxy - A fun platform game made with Godot Engine">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="game-header">
+        <div class="header-content">
+            <a href="../../index.html" class="back-btn">
+                <i class="bi bi-arrow-left"></i> Back to Portfolio
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="game-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="game-badge">🎮 Platform Game</span>
+            <h1 class="game-title">GREEDY FOXY</h1>
+            <p class="game-subtitle">A fun 2D platformer game built with Godot Engine</p>
+            <div class="game-tags">
+                <span class="tag"><i class="bi bi-controller"></i> Platformer</span>
+                <span class="tag"><i class="bi bi-cpu"></i> Godot Engine</span>
+                <span class="tag"><i class="bi bi-person"></i> Single Player</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Player Section -->
+    <section class="game-player-section">
+        <div class="container">
+            <div class="section-label">
+                <i class="bi bi-play-circle-fill"></i> PLAY NOW
+            </div>
+            <h2 class="section-title">Try the Game</h2>
+
+            <div class="game-frame-wrapper">
+                <!-- 
+                    ============================================
+                    GANTI URL DI BAWAH INI DENGAN EMBED URL DARI ITCH.IO
+                    
+                    Cara mendapatkan embed URL:
+                    1. Upload game ke itch.io (HTML5 export)
+                    2. Buka halaman game kamu di itch.io
+                    3. Edit game > pilih "Embed in other pages" 
+                    4. Copy embed URL-nya
+                    5. Ganti src di iframe di bawah ini
+                    ============================================
+                -->
+                <iframe 
+                    id="game-iframe"
+                    src="https://itch.io/embed-upload/YOUR_GAME_ID?color=1a1a2e"
+                    allowfullscreen
+                    allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share"
+                    frameborder="0"
+                    width="960"
+                    height="600">
+                    <a href="https://YOUR_USERNAME.itch.io/greedy-foxy">
+                        Play Greedy Foxy on itch.io
+                    </a>
+                </iframe>
+
+                <!-- Placeholder saat game belum di-setup -->
+                <div class="game-placeholder" id="game-placeholder">
+                    <div class="placeholder-content">
+                        <i class="bi bi-controller"></i>
+                        <h3>Game Coming Soon!</h3>
+                        <p>Upload game ke itch.io lalu ganti embed URL di file ini</p>
+                        <a href="#" class="play-on-itch-btn" id="itch-link">
+                            <i class="bi bi-box-arrow-up-right"></i> Play on itch.io
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Controls -->
+            <div class="game-controls-info">
+                <h3><i class="bi bi-keyboard"></i> Controls</h3>
+                <div class="controls-grid">
+                    <div class="control-item">
+                        <kbd>←</kbd> <kbd>→</kbd>
+                        <span>Move</span>
+                    </div>
+                    <div class="control-item">
+                        <kbd>Space</kbd>
+                        <span>Jump</span>
+                    </div>
+                    <div class="control-item">
+                        <kbd>↑</kbd>
+                        <span>Climb</span>
+                    </div>
+                    <div class="control-item">
+                        <kbd>Esc</kbd>
+                        <span>Pause</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Game Section -->
+    <section class="game-about-section">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Description -->
+                <div class="about-card description-card">
+                    <h3><i class="bi bi-info-circle"></i> About The Game</h3>
+                    <p>
+                        Greedy Foxy is a 2D platformer game where you play as a hungry fox 
+                        navigating through challenging levels. Collect food, avoid obstacles, 
+                        and reach the finish line to complete each stage!
+                    </p>
+                    <p>
+                        Built with <strong>Godot Engine</strong> as a personal project to explore 
+                        game development and level design concepts.
+                    </p>
+                </div>
+
+                <!-- Tech Stack -->
+                <div class="about-card tech-card">
+                    <h3><i class="bi bi-gear"></i> Tech Stack</h3>
+                    <ul class="tech-list">
+                        <li>
+                            <span class="tech-icon">🎮</span>
+                            <div>
+                                <strong>Godot Engine 4</strong>
+                                <small>Game Engine</small>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="tech-icon">📝</span>
+                            <div>
+                                <strong>GDScript</strong>
+                                <small>Programming Language</small>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="tech-icon">🎨</span>
+                            <div>
+                                <strong>Pixel Art</strong>
+                                <small>Art Style</small>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="tech-icon">🌐</span>
+                            <div>
+                                <strong>HTML5 Export</strong>
+                                <small>Web Playable</small>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Features -->
+                <div class="about-card features-card">
+                    <h3><i class="bi bi-star"></i> Features</h3>
+                    <ul class="features-list">
+                        <li><i class="bi bi-check-circle-fill"></i> Multiple challenging levels</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Smooth character controls</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Collectible items & score system</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Fun pixel art graphics</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Playable in browser</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="game-footer">
+        <p>&copy; 2024 DGanz Portfolio — Greedy Foxy Game</p>
+    </footer>
+
+    <script>
+        // Check if itch.io iframe loaded — if not, show placeholder
+        const iframe = document.getElementById('game-iframe');
+        const placeholder = document.getElementById('game-placeholder');
+
+        // Show placeholder if the src still has YOUR_GAME_ID (not configured yet)
+        if (iframe.src.includes('YOUR_GAME_ID')) {
+            iframe.style.display = 'none';
+            placeholder.style.display = 'flex';
+        } else {
+            placeholder.style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>

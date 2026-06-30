@@ -1,0 +1,1 @@
+<!-- ini adalah folder untuk project saya yang game itu dibuat di godot -->
