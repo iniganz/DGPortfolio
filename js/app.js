@@ -220,6 +220,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
   });
+
+  const downloadBtn = document.getElementById("downloadCV");
+  if (downloadBtn) {
+    downloadBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const link = document.createElement("a");
+      link.href = "assets/cv/Gede Gandhi Gunadi_CV.pdf";
+      link.download = "CV_Gede Gandhi Gunadi.pdf";
+
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  }
 });
 
 /* Fade in up animation for filter */
@@ -231,16 +246,3 @@ style.textContent = `
   }
 `;
 document.head.appendChild(style);
-
-
-document.getElementById("downloadCV").addEventListener("click", function (e) {
-    e.preventDefault();
-
-    const link = document.createElement("a");
-    link.href = "assets/cv/Gede Gandhi Gunadi_CV.pdf";
-    link.download = "CV_Gede Gandhi Gunadi.pdf";
-
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-});
