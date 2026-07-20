@@ -237,8 +237,8 @@ document.getElementById("downloadCV").addEventListener("click", function (e) {
     e.preventDefault();
 
     const link = document.createElement("a");
-    link.href = "assets/cv/Gede Gandhi_Gunadi_CV.pdf";
-    link.download = "CV_Gede Gandhi_Gunadi.pdf";
+    link.href = "assets/cv/Gede Gandhi Gunadi_CV.pdf";
+    link.download = "CV_Gede Gandhi Gunadi.pdf";
 
     document.body.appendChild(link);
     link.click();
